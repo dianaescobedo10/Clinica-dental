@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+header{
+    position: relative;
+    background-image: linear-gradient(to left, rgba(2, 170, 176,0.7), rgba(0, 205, 172,0.7)), url("../imagenes/fondo1.jpg");
+    background-size: 1350px 640px;
+    background-repeat: no-repeat;
+    color: #F5F5F5;
+    width: 100%;
+    height: 580px;
+}
+
+nav{
+    width: 90%;
+    height: 80px;
+}
+
+.nav{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_logo{
+    width: 90%;
+    color: #F5F5F5;
+    font-weight: 300;
+    font-size: 50px;
+    margin-left: 137px;  
+}
+
+.enlaces_header{
+    transition: ease-in-out 0.5s;
+}
+
+.enlaces_header a{
+    color: #F5F5F5;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 17px;
+    transition: color ease 2s;
+}
+
+.enlaces_header a:hover{
+    color: #484848;
+}
+
+.hamburguesa{
+    width: 80px;
+    height: 80px;
+    display: none;
+    text-align: center;
+    cursor: pointer;
+    z-index: 51;
+    transition: color 0.5s ease-in;
+}
+
+.fa-bars{
+    font-size: 25px;
+    line-height: 80px;
+    color: #fff;
+}
+
+.texto_header{
+    width: 60%;
+    font-size: 29px;
+    text-align: center;
+    margin: 135px 0 0 265px;
+}
+
+.wave{
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    z-index: 40;
+}
+
+/* Tratamientos: */
+
+.tratamientos{
+    background: #F5F5F5;
+}
+
+.titulo{
+    color: #484848;
+    font-size: 40px;
+    text-align: center;
+}
+
+.contenedor1{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+.contenedor_articulo{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    justify-content: space-around;
+}
+
+.articulo{
+    width: 29%;
+    background: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 45px 30px 60px 30px;
+    transition:  0.5s;
+}
+
+.articulo:hover{
+    box-shadow: 0 4px 10px rgba(0, 205, 172,0.5);
+}
+
+.articulo_img{
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    padding-top: 20px;
+}
+
+.tratamiento_titulo{
+    color: #484848;
+    font-size: 24px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.tratamiento_parrafo{
+    font-weight: 100;
+    color: #5d6678;
+    margin-top: 15px;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+/* Costos */ 
+.costos{
+    background: #fff;
+}
+
+.costos_cont{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+
+.titulo{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.img_costos{
+    width: 400px;
+    margin-bottom: 25px;
+    margin-right: -100px;
+}
+
+.precio{
+    margin: 10px -100px -5px 0;
+    font-size: 16px;
+    font-weight: 100;
+    text-align: justify;
+    width: 300px;
+    background:  #F5F5F5;
+    color: #484848;
+    border-radius: 6px;
+    padding: 10px 0 10px 15px;
+}
+
+.precio b{
+    color: #EFA92B;
+}
+
+/* Testimonios */
+.testimonios{
+    background: #34A598;
+    padding-top: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.clientes{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.cliente{
+    width: 30%;
+    background:rgba(255,255,255,.3);
+    color: #F5F5F5;
+    text-align: center;
+    border-radius: 10px;
+    padding: 40px 35px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.cliente_1-nombre{
+    font-size: 20px;
+}
+
+.cliente_foto{
+    clip-path: circle(40%);
+}
+
+.cliente_1-comentario{
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Footer */
+.contacto{
+    background: #F5F5F5;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.titulo_cont{
+    text-align: center;
+}
+
+.partfooter{
+    width: 20%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.direccion{
+    margin-bottom: 5px;
+}
+iframe{
+    margin-top: -10px;
+}
+
+.partfooter h4, i{
+    color: #484848;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.datos{
+    margin-top: 65px;
+}
+
+.redes{
+    margin-top: 65px;
+}
+
+.redes i{
+    font-size: 20px;
+    display: inline-block;
+    color: #484848;
+    border: 1px solid  #484848;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    line-height: 36px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    transition: all ease 2s;
+    margin-right: 5px;
+}
+
+.fas{
+    margin-top: -5px;
+}
+
+.redes i:hover{
+    color: #F5F5F5;
+    background:rgba(0, 205, 172,0.5);
+    border-color:rgba(0, 205, 172,0.5);
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1024px){
+    .nav_logo{
+        margin-left: 80px;
+    }
+
+    .header_presentacion{
+        margin: 20px 0 0 -100px;
+    }
+
+    .costos_cont{
+        margin: 30px;
+    }
+
+    iframe {
+        margin-top: -15px;
+        margin-left: -50px;
+    }
+
+    .partfooter h4{
+        font-size: 17px;
+    }
+
+    .datos {
+        margin-top: 45px;
+        margin-left: 120px;
+        margin-right: -50px;
+    }
+    
+    .redes {
+        margin-top: 43px;
+        margin-right: 40px;
+    }
+
+@media screen and (max-width:800px){
+    .nav_logo{
+        font-size: 40px;
+        margin-left: 60px;
+    }
+
+    .enlaces_header{
+        position: fixed;
+        margin-left: 10px;
+        font-size: 14px;
+        /*display: none;*/
+        background: linear-gradient(to left, rgb(2, 170, 176), rgb(0, 205, 172));
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        z-index: 50;
+        clip-path: circle(0.4% at 100% 0);
+    }
+
+    .nav .menudos{
+        -webkit-clip-path: circle(140.9% at 100% 1%);
+        clip-path: circle(140.9% at 100% 1%);
+    }
+
+    .hamburguesa{
+        display: block;
+        padding: 35px 40px;
+    }
+
+    .header_presentacion {
+        margin: 20px 0 0 -200px;
+    }
+
+    .articulo{
+        width: 45%;
+    }
+
+    .costos_cont{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cajas{
+        margin: 0 0 40px 0;
+    }
+
+    .precio {
+        width: 500px;
+        margin: 15px 0 0 0;
+        font-size: 17px;
+    }
+
+    .img_costos{
+        width: 420px;
+        margin-right: 0;
+    }
+    
+    .clientes{
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .cliente{
+        width: 50%;
+        margin-left: 200px;
+    }
+
+    .partfooter {
+        width: 51%;
+        margin-bottom: 20px;
+        margin-top: 15px;
+    }
+
+    iframe {
+        margin-top: -10px;
+        width: 500px;
+        height: 250px;
+        margin-left: 15px;
+    }
+
+    .datos{
+        width: 100%;
+        margin: 5px 0 0 -5px
+    }
+
+    .horario{
+        justify-content: row;
+    }
+}
+
+@media screen and (max-width:600px){
+    .nav_logo {
+        font-size: 35px;
+        margin-left: 50px;
+    }
+
+    .texto_header {
+        font-size: 20px;
+        margin: 135px 0 0 220px;
+    }
+
+    .articulo {
+        width: 90%;
+    }
+
+    .cliente {
+        width: 90%;
+        margin: 20px 30px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .nav_logo {
+        font-size: 30px;
+        margin-left: 40px;
+    }
+
+    .menu_hamburguesa {
+        padding: 30px 40px;
+    }
+
+    .header_presentacion {
+        margin: 20px 0 0 -208px;
+        font-size: 17px;
+    }
+
+    .texto_header {
+        margin: 90px 0 0 202px;
+    }
+
+    .precio {
+        width: 400px;
+        margin: 15px 0 0 5px;
+    }
+
+    .img_costos {
+        width: 400px;
+        margin-right: -10px;
+    }
+
+    .cliente {
+        margin: 20px 25px;
+    }
+
+    iframe {
+        width: 400px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:320px){
+    .nav_logo {
+        font-size: 25px;
+        margin-left: 30px;
+    }
+
+    .texto_header {
+        margin: 90px 0 0 214px;
+        width: 30%;
+    }
+
+    .menu_hamburguesa {
+        padding: 31px 40px;
+    }
+
+    .hamburguesa{
+        padding: 30px 40px;
+    }
+
+    .titulo {
+        font-size: 30px;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .precio {
+        width: 300px;
+        margin: 15px 0 0 -20px;
+    }
+
+    .img_costos {
+        width: 250px;
+    }
+
+    .cliente {
+        margin: 20px 17px;
+    }
+
+    iframe {
+        width: 280px;
+    }
+}
+}
